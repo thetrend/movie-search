@@ -52,7 +52,7 @@ const AboutPage: React.FC = () => {
           - the Internet's icon library
         </li>
         <li>
-          <a href="https:/canva.com/" target="_blank" rel="noreferrer">
+          <a href="https://canva.com/" target="_blank" rel="noreferrer">
             Canva
           </a>{' '}
           - a graphic design and stock photo tool
