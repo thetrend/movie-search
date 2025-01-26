@@ -16,7 +16,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
     className="flex flex-col place-items-center w-full gap-2 mb-6 mx-2 md:mx-10 xl:mx-0 my-10 pb-20"
   >
     <h2 className="text-4xl font-bold">Movie Search</h2>
-    <p className="pb-10 text-center">
+    <p className="p-10 text-center">
       Search for a movie, TV show, cast member, or crew member!
     </p>
     <div className="flex w-5/6">
