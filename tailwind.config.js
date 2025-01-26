@@ -3,8 +3,14 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-  ],  theme: {
-    extend: {},
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      backgroundImage: {
+        'main': "url('./public/assets/cta_bg.png')"
+      }
+    },
   },
   plugins: [],
 }

@@ -4,6 +4,22 @@
 
 body {
   @apply
-    bg-stone-200
+    text-white
+  ;
+}
+
+input, textarea, select {
+  @apply
+    text-black
+  ;
+}
+
+a {
+  @apply
+    font-bold
+    pb-2
+    hover:border-b-2
+    hover:border-black
+    hover:pb-0
   ;
 }
