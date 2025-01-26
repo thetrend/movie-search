@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'main': "url('./assets/cta_bg.png')"
+        'main': "url('https://movies.graced.is/assets/cta_bg.png')"
       }
     },
   },
