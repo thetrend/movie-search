@@ -68,20 +68,20 @@ const DetailsPage: React.FC = () => {
           }
         />
       ) : details ? (
-        <div className="flex bg-white bg-opacity-55 text-black p-10 mx-10">
+        <div className="flex bg-white bg-opacity-55 text-black p-10 mx-10 md:flex-row flex-col">
           {('poster_path' in details && details.poster_path) ||
           ('profile_path' in details && details.profile_path) ? (
             <img
               src={`https://image.tmdb.org/t/p/w300${'poster_path' in details ? details.poster_path : (details as PersonDetails).profile_path}`}
               alt={'title' in details ? details.title : details.name}
-              className="rounded-2xl mr-8"
+              className="rounded-2xl md:mr-8"
             />
           ) : (
             <div className="h-64 w-auto bg-gray-300 flex items-center justify-center aspect-[2/3] mr-8 rounded-lg">
               <p className="text-gray-500">No Image Available</p>
             </div>
           )}
-          <section>
+          <section className="md:text-left text-center">
             <h2 className="text-4xl font-bold">
               {'title' in details ? details.title : details.name}
             </h2>
@@ -116,7 +116,7 @@ const DetailsPage: React.FC = () => {
               </p>
             )}
             {'overview' in details && details.overview && (
-              <p className="mb-2">
+              <p className="mb-2 text-left">
                 <strong>Overview:</strong> {details.overview}
               </p>
             )}
